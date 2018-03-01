@@ -1,0 +1,93 @@
+h1 {
+  color: #27408B;
+}
+
+body {
+  font-family: Arial, serif;
+  background-color: White;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: #708090;
+  overflow: hidden;
+  height: 63px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #F2F2F2;
+  text-align: center;
+  /* top & bottom  right & left  */
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+ /* ul's naturally have a padding of about 10px  */
+.navbar ul {
+  /* setting margin to the top and none to the rest  */
+  margin: 8px 0 0 0;
+  /* no bullet points  */
+  list-style: none;
+}
+
+.navbar a:hover {
+  background-color: #DDD;
+  color: #000;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* we want it on top always  */
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #515151;
+  opacity: 0.9;
+  overflow-x: hidden;
+  /* horizontal ^  */
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.side-nav a {
+        /* top right bottom left  */
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #CCC;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  color: #FFF;
+}
+
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media(max-width: 568px) {
+  .navbar-nav{display:none}
+}
+
+/* slide menu goes away above 568px  */
+/* @media(min-width: 568px) {
+  .open-slide{display:none}
+} */
